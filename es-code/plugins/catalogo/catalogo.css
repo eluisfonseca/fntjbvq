@@ -1,0 +1,221 @@
+.wrap {
+      overflow: hidden;
+      margin: 10px;
+    }
+    .box {
+      float: left;
+      position: relative;
+      width: 20%;
+      padding-bottom: 20%;
+	  
+    }
+    .boxInner {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      overflow: hidden;
+	  background:#FFF;
+    }
+    .boxInner img {
+      width: 100%;
+	  margin:0 auto;
+    }
+    .boxInner .titleBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      /*margin-bottom: -50px;*/
+      background: #000;
+      background: rgba(0, 0, 0, 0.5);
+      color: #FFF;
+      padding: 10px;
+      text-align: center;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+      margin-bottom: 0;
+    }
+	
+	#fcontainer{
+		width:auto;
+	/*min-height:450px;
+	*/
+	height:auto;
+	text-align:left;
+	background:url(images/fundo_verde.png);
+	padding-top:0px;
+	padding-bottom:10px;
+	padding-left:30px;
+	padding-right:15px;
+	margin: 0px auto;
+	}
+	
+	#fcontainer .imagem {
+	width:40%;
+	height:auto;
+	margin:20px auto;
+	float:left;
+	border-radius:20px;
+	background:#FFF;
+	padding:15px;
+	min-width:250px;
+	}
+	
+
+	#fcontainer .texto {
+	width:50%;
+	margin:20px auto;
+	float:right;
+	text-align:left;
+}
+
+	.main_image_container{
+		max-height:500px;
+		height:60%;
+		min-height:250px;
+		max-width:100%;
+		min-width:250px;;
+		width:auto;
+		border:2px solid rgb(0, 128, 64);
+		margin-bottom:30px;
+		text-align:center;
+	}
+
+#main_image{
+		width:auto;
+		max-width:100%;
+		min-width:250px;
+		height:100%;
+		max-height:500px;
+		min-height:100px;
+		margin:0px auto;
+	}
+	
+	.preview_area{
+		/*display:inline-block;*/
+		width:100%;
+		heigth:auto;
+		min-width:250px;
+		text-align:center;
+		clear:both;
+	}
+	
+	.preview_area .item{
+		height:70px;
+		width:70px;
+		overflow:hidden;
+		float:left;
+	}
+	
+	.preview_area .item img{
+		width:100%;
+		height:auto;
+		margin:0px auto;
+	}
+	
+	
+    @media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+      .box {
+        width: 100%;
+        padding-bottom: 100%;
+      }
+	  
+	  #fcontainer .imagem  {
+		 display:block;
+		 clear:both;
+		 margin:10px auto;
+		 width:90%;
+	  }
+	  
+	  #fcontainer .texto  {
+		   display:block;
+		    clear:both;
+		 margin:10px auto;
+		  width:90%;
+	  }
+    }
+	
+	@media (max-width : 775px) {
+		
+		#fcontainer {
+			clear:both;
+			margin:0px auto;
+			width:100%;
+			padding:0px;
+		}
+		
+		.content {
+			min-width:320px;
+		}
+		
+		#fcontainer .imagem  {
+		 display:block;
+		 clear:both;
+		 margin:10px auto;
+		 width:100%;
+		 padding:0px;
+	  }
+	  
+	  #fcontainer .texto  {
+		   display:block;
+		    clear:both;
+		 margin:10px auto;
+		  width:100%;
+		  padding:0px;
+	  }
+	  
+	  .main_image_container{
+		height:500px !important;;
+		}
+	}
+    @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 2 tiles */
+      .box {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+	  .main_image_container{
+		height:300px;
+		}
+    }
+	
+	@media (max-width : 850px) {
+		.main_image_container{
+		height:300px;
+		}
+	}
+	@media (max-width : 1050px) {
+		.main_image_container{
+			height:350px;
+		}
+	}
+	
+    @media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view: 3 tiles */
+      .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+	  .main_image_container{
+		height:350px;
+		}
+    }
+	
+    @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+      /* Medium desktop: 4 tiles */
+      .box {
+        width: 25%;
+        padding-bottom: 25%;
+      }
+	  
+	  .main_image_container{
+		height:400px;
+		}
+    }
